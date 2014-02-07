@@ -1,0 +1,54 @@
+{
+  "name": "gsproxy",
+  "description": "A proxy server for sync Git repos to SVN repo.",
+  "version": "0.1.0pre-alpha",
+  "homepage": "https://github.com/renrenfed/gsproxy",
+  "author": {
+    "name": "viclm",
+    "email": "viclm@live.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/renrenfed/gsproxy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/renrenfed/gsproxy/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/renrenfed/gsproxy/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/gsproxy",
+  "bin": {
+    "gsproxy": "bin/gsproxy"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "install": "scripts/install.js",
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "async": "~0.2.10",
+    "nopt": "~2.1.2",
+    "colors": "~0.6.2",
+    "xml2js": "~0.4.1",
+    "glob": "~3.2.8",
+    "rc": "~0.3.3"
+  },
+  "devDependencies": {
+    "nodegit": "~0.1.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "git",
+    "svn",
+    "sync"
+  ]
+}
